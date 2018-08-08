@@ -1,0 +1,24 @@
+.section{
+  background: #faf8ee;
+  overflow: hidden;
+}
+.logo{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 40rpx;
+}
+.load{
+  text-align: center;
+  margin-top: 40rpx;
+}
+.load text{
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border:1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.load text.sct {
+  background-color: #ccc;
+}

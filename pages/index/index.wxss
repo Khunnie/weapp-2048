@@ -1,0 +1,157 @@
+.container{
+  padding:0 20rpx;
+}
+.header{
+  margin-top: 60rpx;
+  display: flex;
+  position: absolute;
+}
+.l-box{
+  flex: 1;
+}
+.name{
+  font-size: 36px;
+  color: #776e65;
+  font-weight: bold;
+}
+.play{
+  color: #fff;
+  background: #bbada0;
+  height: 66rpx;
+  line-height: 66rpx;
+  padding: 0 40rpx;
+  border-radius: 8rpx;
+  margin-top:4rpx;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+.r-box{
+  width: 170rpx;
+  height:170rpx;
+  background: #cec4b8;
+  margin-left: 48rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  font-size:30px;
+  font-weight: bold;
+}
+.title{
+  color: #9c958c;
+  display: block;
+  font-size: 24px;
+  padding-top: 10rpx;
+}
+.num{
+  display: block;
+  color: #fff;
+}
+.game{
+  background: #bbada0;
+  border-radius: 8rpx;
+  margin: 0 4%;
+  margin-top: 304rpx;
+  width: 93vw;
+  height: 93vw;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;/* 禁用系统默认菜单 */
+  -ms-touch-callout: none;
+  -webkit-user-select: none;/* css控制文字不能被选中 */
+  -moz-user-select: none;
+  -ms-user-select: none;/* 当触控事件发生在元素上时，不进行任何操作 */
+  -ms-touch-action: none;
+  touch-action: none;
+  padding-top:3vw;
+}
+.row{
+  display: flex;
+}
+.cell {
+  width: 19vw;
+  height: 19vw; 
+  margin-left: 3.5vw;
+  margin-bottom: 3vw;
+  float: left;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(238, 228, 218, 0.35);
+  overflow: hidden;
+}
+.cell-con { 
+  width: 19vw;
+  height: 19vw; 
+  line-height: 19vw;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}  
+.cell-con-2 { background: #eee4da; }
+.cell-con-4 { background: #ede0c8; }
+.cell-con-8 {
+  color: #f9f6f2;
+  background: #f2b179;
+}
+.cell-con-16 {
+  color: #f9f6f2;
+  background: #f59563;
+}
+.cell-con-32 {
+  color: #f9f6f2;
+  background: #f67c5f;
+}
+.cell-con-64 {
+  color: #f9f6f2;
+  background: #f65e3b;
+}
+.cell-con-128 {
+  color: #f9f6f2;
+  background: #edcf72;
+  font-size: 30px;
+}
+.cell-con-256 {
+  color: #f9f6f2;
+  font-size: 30px;
+  background: #edcc61;
+}
+.cell-con-512 {
+  color: #f9f6f2;
+  font-size: 30px;
+  background: #edc850;
+}
+.cell-con-1024 {
+  color: #f9f6f2;
+  font-size: 25px;
+  background: #edc53f;
+}
+.cell-con-2048 {
+  color: #f9f6f2;
+  font-size: 25px;
+  background: #edc22e;
+}  
+.game-over {
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 20vw;
+  box-sizing: border-box;
+} 
+.game-over text {
+  display: block;
+}
+.nowScore {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.pro {
+  font-weight: bold;
+  font-size: 30px;
+}
