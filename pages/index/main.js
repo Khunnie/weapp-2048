@@ -20,10 +20,10 @@ Main.prototype = {
   },
   addRandomData() { //填充数据
     if (!this.board.cellEmpty()) {
-      var value = Math.random() < 0.9 ? 2 : 4;
-      var cell = this.board.selectCell();
-      cell.val = value;
-      this.update(cell);
+      var value = Math.random() < 0.9 ? 2 : 4;//随机2或者4
+      var cell = this.board.selectCell();//选择空白格子
+      cell.val = value;//格子的value是2或者4
+      this.update(cell);//更新数值
     }
   },
   update(cell) { // 更新数据
@@ -59,21 +59,25 @@ Main.prototype = {
     return result;
   },
   formList(dir) {  // 根据滑动方向生成list的四个数组
-    var list = [[], [], [], []];
-    for (var i = 0; i < this.size; i++)
+    var list = [[], [], [], []];//list 四个空数组
+    for (var i = 0; i < this.size; i++)//for循环
       for (var j = 0; j < this.size; j++) {
         switch (dir) {
           case 0:
             list[i].push(this.board.grid[j][i]);
+            console.log(this.board.grid[j][i])
             break;
           case 1:
             list[i].push(this.board.grid[i][this.size - 1 - j]);
+            console.log(this.board.grid[i][this.size - 1 - j])
             break;
           case 2:
             list[i].push(this.board.grid[this.size - 1 - j][i]);
+            console.log(this.board.grid[this.size - 1 - j][i])
             break;
           case 3:
             list[i].push(this.board.grid[i][j]);
+            console.log(this.board.grid[i][j])
             break;
         }
       }
